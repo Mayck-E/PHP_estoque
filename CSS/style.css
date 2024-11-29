@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200;1,400&display=swap');
+
+/* Oculta a barra de rolagem no Chrome, Safari e Edge */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Oculta a barra de rolagem no Firefox */
+html {
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* Permite o funcionamento da rolagem */
+body {
+    overflow: auto;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-custom {
+    background-color: #eeeeee;
+    /* Escolha a cor que você preferir */
+    height: 60px;
+}
+
+.navbar-custom a:hover {
+    display: flex;
+    justify-content: flex-end;
+    /* Alinha os itens à direita */
+    color: #000000;
+}
+
+.navbar-custom .nav-link {
+    margin-right: 30px;
+}
+
+.sobre-nos {
+    margin-top: 200px;
+    background-color: #eeeeee;
+
+}
+
+.container-intro {
+    margin-left: 100px;
+    margin-top: 60px;
+}
+
+.img-intro {
+    max-width: 100%;
+    max-height: 100%;
+    width: 500;
+    height: 500;
+    margin-left: 500px;
+
+}
+
+.vh-100 {
+    height: 100vh;
+    /* Para centralizar verticalmente */
+}
+
+.form-container {
+    max-width: 600px;
+    /* Limite de largura do formulário */
+    width: 100%;
+}
+
+.form-control-user {
+    margin-bottom: 20px;
+}
+
+.card-e {
+    border-radius: 20px;
+    width: 800px;
+    height: 450px;
+    margin-top: -110px;
+}
+
+.btn-salvar {
+    margin-top: 20px;
+    /* Aumente ou diminua esse valor conforme necessário */
+    background-color: #38b6ff;
+    border-color: #38b6ff;
+}
+
+.card-r {
+    border-radius: 20px;
+    /* width: 100px; */
+    margin-top: -110px;
+}
+
+.n-po {
+    margin-top: 30px;
+}
+
+.footer-er,
+.fixar-rodape {
+
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    /* Cor do background, ajustável */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar-nav .nav-item .nav-link.active h5 {
+    color: #38b6ff !important;
+    /* Isso garante que sua cor será aplicada */
+    text-decoration: underline
+}
+
+.img-fluid {
+    border-radius: 0 0 0 650px;
+    width: 100rem;
+    height: auto;
+}
+
+.btn-outline-success {
+    color: #000000;
+    border-color: #38b6ff;
+    border-width: 3px;
+    /* Aumentando a largura da borda */
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #38b6ff;
+    border-color: #38b6ff;
+}
+
+@media (max-width: 767.98px) {
+    .intro-section {
+        flex-direction: column;
+    }
+
+    .intro-section .order-first {
+        order: -1;
+    }
+
+    .intro-section .order-last {
+        order: 2;
+    }
+}
+
+
+@media (max-width: 996px) {
+    #about div {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: auto;
+        margin-top: 0;
+
+    }
+
+    #about div div div {
+        flex-direction: column;
+    }
+}
